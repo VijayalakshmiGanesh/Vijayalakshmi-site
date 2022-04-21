@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 
 :root {
-    --primary-color: #B56CA2;
+    --primary-color: #b56ca2;
     --link-color: rgb(250, 250, 250);
 }
 
 h3 {
-    font-weight: bold;
-    font-size: xx-large;
-    padding-left: 5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    text-align: center;
+
 }
 
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--link-color);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 .header {
     background-color: var(--primary-color);
@@ -45,7 +54,7 @@ h3 {
     text-decoration: none;
     text-align: right;
     list-style: none;
-    padding: 2px 15%;
+    padding: 10px 15%;
 
 }
 
@@ -65,7 +74,15 @@ h3 {
 }
 
 .body-content {
-    font-family: 'Square Peg', cursive;
-    font-size: large;
+    /* font-family: 'Square Peg', cursive; */
+    padding-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    /* font-weight: 1000px; */
+    background-image: url(image/body.jpg);
+    background-size: cover;
+    height: 600px;
     padding: 0%;
+    box-shadow: inset 0 0 0 1000px rgba(181, 108, 160, .6);
+
 }
