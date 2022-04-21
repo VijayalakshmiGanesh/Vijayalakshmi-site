@@ -1,10 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Square+Peg&display=swap');
 
-h2 {
-    color: blue;
+:root {
+    --primary-color: #B56CA2;
+    --link-color: rgb(250, 250, 250);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 5rem;
+}
+
+
+.header {
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+
+.header .left {
+    width: 20%;
+    float: left;
 
 }
 
-body {
+.header .right {
+    width: 80%;
+    float: right;
+    margin-bottom: 0%;
+    height: 125px;
+}
+
+.img-header {
+    height: 150px;
+
+}
+
+.links {
+    text-decoration: none;
+    text-align: right;
+    list-style: none;
+    padding: 2px 15%;
+
+}
+
+.links-list {
+    color: var(--link-color);
+
+
+}
+
+.links .inline {
+
+    display: inline-block;
+    padding: 1rem;
+    font-size: x-large;
+
+
+}
+
+.body-content {
     font-family: 'Square Peg', cursive;
+    font-size: large;
+    padding: 0%;
 }
