@@ -46,7 +46,7 @@ p {
 }
 
 .img-header {
-    height: 150px;
+    height: 100px;
 
 }
 
@@ -54,7 +54,7 @@ p {
     text-decoration: none;
     text-align: right;
     list-style: none;
-    padding: 10px 15%;
+    padding: 0% 15%;
 
 }
 
