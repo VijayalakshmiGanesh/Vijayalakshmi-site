@@ -11,9 +11,11 @@
 }
 
 :root {
-    --primary-color: #b56ca2;
+    /* --primary-color: #b56ca2; */
+    --primary-color: #814171;
     --link-color: rgb(250, 250, 250);
-    --icon-color: #5C2271;
+    /* --icon-color: #5C2271; */
+    --icon-color: #511C5F;
     --icon-hover: #000000;
 }
 
@@ -83,18 +85,15 @@ p {
 }
 
 .body-content {
-    /* font-family: 'Square Peg', cursive; */
+
     padding-top: 0px;
     font-family: 'Montserrat', sans-serif;
     font-size: xx-large;
-    /* font-weight: 1000px; */
-    /* background-image: url(image/body.jpg); */
     background-size: cover;
-    height: 600px;
+    height: auto;
     padding: 2rem;
-    /* box-shadow: inset 0 0 0 1000px rgba(181, 108, 160, .6); */
     box-shadow: inset 0 0 0 1000px rgba(236, 186, 177, .4);
-    /* box-shadow: inset 0 0 0 1000px rgba(136, 89, 136, 0.6); */
+
 
 }
 
@@ -121,7 +120,7 @@ p {
 }
 
 .project-title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     padding: 0.2rem 0.4rem;
     margin: 0.2rem 0.4rem;
@@ -132,13 +131,14 @@ p {
 }
 
 .project-description {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4rem;
     padding: 0.5rem 0.2rem;
     margin: 0.5rem 0.2rem;
     font-weight: 400;
     height: max-content;
-    font-variant: small-caps;
+    color: var(--primary-color);
+    /* font-variant: small-caps; */
 }
 
 .project-links .live,
@@ -165,12 +165,36 @@ p {
 .fa,
 .material-icons {
     font-size: 48px;
-    color: var(--icon-hover);
-
+    color: var(--link-color)
 }
 
 .fa:hover,
 .material-icons:hover {
-    color: var(--icon-color);
+    color: var(--icon-hover)
+}
 
+.project-link-text {
+    letter-spacing: 1px;
+}
+
+footer {
+    /* font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color); */
+
+    text-align: center;
+    /* font-size: 1.5rem;
+    font-weight: 500; */
+    padding: 0.5rem;
+    background-color: var(--icon-color);
+}
+
+footer p {
+    color: white;
+}
+
+.blog-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
