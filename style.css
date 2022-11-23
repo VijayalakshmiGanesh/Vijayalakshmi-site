@@ -149,6 +149,17 @@ p {
     text-decoration: none;
 }
 
+.project-links>.desc {
+    text-align: left;
+    color: var(--icon-hover);
+    font-size: 1.3rem;
+
+}
+
+.group {
+    display: inline;
+}
+
 .project-links .live:hover,
 .project-links .git:hover {
     background-color: var(--link-color);
