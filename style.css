@@ -1,210 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Fira+Sans+Condensed:ital,wght@0,200;0,300;0,500;0,800;1,300;1,500;1,800&family=Kaushan+Script&family=Leckerli+One&family=Source+Code+Pro:ital,wght@0,500;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
 
-* {
+html, body{
     margin: 0;
     padding: 0;
 }
 
 :root {
-    /* --primary-color: #b56ca2; */
-    --primary-color: #814171;
-    --link-color: rgb(250, 250, 250);
-    /* --icon-color: #5C2271; */
-    --icon-color: #511C5F;
-    --icon-hover: #000000;
+    --blue: #242582;
+    --gray: #737373;
+    --rose : #950740;
+    --chery-red: #990011FF;
+    --off-white: #E3E2DF;
+    --black: #1A1A1D;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    background-color: var(--primary-color);
-    max-height: fit-content;
-    min-height: 7.5rem;
-
+.logo{ 
+    height: 7rem;
+    width: 22rem;
 }
 
-.img-header {
-
-    flex: 0 0;
-    height: 8rem;
+.navbar-dark .navbar-nav .nav-link.active, .title{
+    color: var(--rose) !important;
+    font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover  {
+    color: var(--gray) !important;
+}
+.highlight, main a, footer>a{
+    color: var(--rose) !important;
+    font-weight: 600;
+}
+main, footer{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.02rem;
+   
+}
+body{
+    background-color: var(--black) !important;
+    color: var(--off-white) !important ;
 }
 
-.header-links {
-    flex: 1 0;
-    text-align: right;
-
+main, footer{
+    background: rgb(26,26,29);
+background: linear-gradient(90deg, rgba(26,26,29,1) 20%, rgba(9,11,46,1) 50%, rgba(26,26,33,1) 80%);
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
 }
 
-.header p {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--link-color);
-    font-size: xx-large;
-    padding: 1rem;
-}
-
-.links-list {
-    padding: 1rem;
-    margin: 1rem;
-    text-align: right;
-    color: var(--link-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-
-}
-
-h3 {
-    font-weight: bolder;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 1rem;
-
-}
-
-p {
-    font-family: 'Josefin Sans', sans-serif;
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 0.5rem;
-}
-
-
-.body-content {
-
-    padding-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    background-size: cover;
-    height: 100%;
-    padding: 2rem;
-    box-shadow: inset 0 0 0 1000px rgba(236, 186, 177, .4);
-
-
-}
-
-.header-projects {
-    background-color: var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    color: var(--link-color);
-    padding: 1.5rem;
-    font-size: xx-large;
-}
-
-.project-list {
-    align-self: center;
-    margin: 2vh;
-    padding: 2vh;
-    display: block;
-    box-shadow: inset 0 0 0 1000px rgba(236, 186, 177, .4);
-    min-height: 5vh;
-    max-height: auto;
-    border-left: 0.4rem;
-    border-color: var(--primary-color);
-    border-left-style: solid;
-}
-
-.project-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    padding: 0.2rem 0.4rem;
-    margin: 0.2rem 0.4rem;
-    font-weight: bolder;
-    font-style: oblique;
-    letter-spacing: 2.2px;
-    word-spacing: 1.4px;
-}
-
-.project-description {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.4rem;
-    padding: 0.5rem 0.2rem;
-    margin: 0.5rem 0.2rem;
-    font-weight: 400;
-    height: max-content;
-    color: var(--primary-color);
-    /* font-variant: small-caps; */
-}
-
-.project-links .live,
-.project-links .git {
-    padding: 0.5rem;
-    margin: 0.2rem;
-    color: var(--link-color);
-    background-color: var(--primary-color);
-    display: block;
-    width: 20rem;
-    border-radius: 2vh;
-    text-align: center;
-    font-size: 1.25rem;
-    text-decoration: none;
-}
-
-.project-links>.desc {
-    text-align: left;
-    color: var(--icon-hover);
-    font-size: 1.3rem;
-
-}
-
-.group {
-    display: inline;
-}
-
-.project-links .live:hover,
-.project-links .git:hover {
-    background-color: var(--link-color);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
-
-.fa,
-.material-icons {
-    font-size: 48px;
-    color: var(--link-color)
-}
-
-.fa:hover,
-.material-icons:hover {
-    color: var(--icon-hover)
-}
-
-.project-link-text {
-    letter-spacing: 1px;
-}
-
-footer {
-    /* font-family: 'Josefin Sans', sans-serif;
-    color: var(--primary-color); */
-
-    text-align: center;
-    /* font-size: 1.5rem;
-    font-weight: 500; */
-    padding: 0.5rem;
-    background-color: var(--primary-color);
-}
-
-footer p {
-    color: white;
-}
-
-.blog-footer {
+.circles{
+    border-radius: 5rem;
+    padding: 5rem;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
+    filter: blur(6rem);
 }
-
-small {
-    color: white;
+.pink{
+    background-color: #e7740fab; left: 30%; bottom: 40px;
 }
+.blue{
+    background-color: #27daceab; right: 35px; top: 200px; 
+}
+.orange{
+    background-color: #990f50ab; left: 5%;
+}
+@media only screen and (max-width: 800px) {
+    .circles {
+      position: absolute;
+    }
+    .pink{
+    background-color: #e7740fab; left: 30%; bottom: -150%;
+}
+.blue{
+    background-color: #27daceab; right: 35px; top: 120%; 
+}
+.orange{
+    background-color: #990f50ab;     
+    left: 5%;
+    top: 49%;
+}
+.no-visible{
+    display: none;
+}
+  }
+
+  @media only screen and (max-width: 450px) {
+    .logo {
+        height: 6rem;
+        width: 17rem;
+    }
+  }
+  
